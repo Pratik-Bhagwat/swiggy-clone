@@ -2,7 +2,6 @@ import Navbar from "./Components/Navbar";
 import CustomCarousel from "./Components/CustomCarousel";
 import { offerBannerData, otherFoodData, cardData } from "./constants";
 import Card from "./Components/Card";
-// import Image from "./Components/Image";
 
 function App() {
   return (
@@ -11,7 +10,7 @@ function App() {
         <Navbar />
       </header>
       <main>
-        <section className="container max-w-[1150px] mt-6">
+        <section className="container max-w-[425px] sm:max-w-[600px] lg:max-w-[900px] xl:max-w-[1150px] mt-6">
           <CustomCarousel title="Best offer's for you">
             {offerBannerData.map((item) => (
               <img
@@ -33,7 +32,7 @@ function App() {
             ))}
           </CustomCarousel>
         </section>
-        <section className="container max-w-[1150px] mt-6">
+        <section className="container max-w-[425px] sm:max-w-[600px] lg:max-w-[900px] xl:max-w-[1150px] mt-6">
           <CustomCarousel title="Top Restaurant chains in Pune">
             <div className="flex items-center gap-7">
               {cardData.map((data) => (

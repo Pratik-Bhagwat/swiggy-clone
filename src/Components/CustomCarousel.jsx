@@ -27,7 +27,7 @@ function CustomCarousel({ title, children: data }) {
     <div className="relative mt-6">
       <div className="flex items-center justify-between">
         <h2 className="font-bold text-2xl">{title}</h2>
-        <div className="flex items-center gap-3">
+        <div className="hidden lg:flex items-center gap-3">
           <GoArrowLeft
             size={35}
             className="rounded-full bg-[#E2E2E7] p-2 hover:cursor-pointer"
